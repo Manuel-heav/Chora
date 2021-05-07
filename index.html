@@ -15,24 +15,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
-      }
-      .showcase__container h2{
-        background-image: url('showcase.jpg');
-        padding: 30px;
+        min-height: 60vh;
+        padding: 90px;
         background-position: center;
         background-size: cover;
-      }
-      .showcase__container h2 a{
-        color: #fff;
-        font-size: 30px;
-        text-decoration: none;
       }
       header h1{
         color: #fff;
         padding: 20px;
         background: #0a82ec;
       }
+
+      @media(max-width: 768px){
+          .showcase__container a img{
+            width: 500px;
+            height: 300px;
+          }
+        }
     </style>
   </head>
   <body>
@@ -40,7 +39,7 @@
       <h1>Kokeb Music Shop</h1>
     </header>
     <div class="showcase__container">
-      <h2><a href="sms:9272?body=ok">ወደ ኮከብ ሙዚቃ ቤተሰብ ለመቀላቀል ምስሉን ይጫኑ</a></h2>
+      <a href="sms:9272?body=ok"><img src="showcase2.jpg" alt=""></a>
     </div>
   </body>
 </html>
