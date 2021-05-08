@@ -3,55 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Kokeb Music Shop</title>
-    <style media="screen">
-      *{
-        margin: 0;
-        padding: 0;
-      }
-      body{
-        font-family: "arial";
-      }
-      .showcase__container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 60vh;
-        padding: 90px;
-        background-position: center;
-        background-size: cover;
-      }
-      .showcase__container a img{
-        border-radius: 10px;
-        height: 100vh;
-        width: 1000px;
-
-      }
-      header{
-        min-height: 90px;
-        background: #0a82ec;
-
-      }
-      header h1{
-        color: #fff;
-        padding: 20px;
-        background: #0a82ec;
-      }
-
-      @media(max-width: 768px){
-          .showcase__container a img{
-            width: 500px;
-            height: 500px;
-          }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Kokeb Music Shop</h1>
-    </header>
-    <div class="showcase__container">
-      <a href="sms:9272?body=ok" rel="icon"><img src="showcase2.jpg" alt=""></a>
+    <header class="container">
+           <div class="menu-wrapper">
+               <header class="header">
+                <a href="#home" class="logo">Kokeb Music Shop</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                  <!-- <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li> -->
+                </ul>
+              </header>
+           </div>
+   </header>
+    <div class="showcase">
+      <a href="sms:9272?body=ok" rel="icon"><img src="showcase3.jpg" alt=""></a>
     </div>
   </body>
 </html>
